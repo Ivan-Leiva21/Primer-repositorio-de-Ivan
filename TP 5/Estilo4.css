@@ -1,0 +1,21 @@
+#origen{
+    color: red;
+}
+#cascada{
+    color: green !important;
+}
+#cascada{
+    color: yellow;
+}
+div{
+    color: red;
+}
+.claseEsp{
+    color: green;
+}
+#idEsp{
+    color: blue;
+}
+div#idEsp{
+    color: orange;
+}
