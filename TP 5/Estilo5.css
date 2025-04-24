@@ -1,3 +1,6 @@
+body{
+    background-color: cadetblue;
+}
 #parrafo1, #div1, #a1{
     color: green;
 }
@@ -21,4 +24,51 @@
 }
 #div3 div p{
     color: green;
+}
+.colorPrimario{
+    color: seagreen;
+}
+.colorSecundario{
+    color: darkorchid;
+}
+.fondoPrimario{
+    color: yellow;
+}
+.colorSecundario{
+    background-color: red;
+    color: white;
+}
+.textoGrande{
+    font-size: large;
+}
+.textoChico{
+    font-size: small;
+}
+#pseudo{
+    background-color: blue;
+    color: black;
+    padding: 30px;
+    cursor: pointer;
+    transition: 5s;
+}
+#pseudo:hover{
+    background-color: green;
+}
+#pseudo:active{
+    background-color: powderblue;
+}
+#div4 > div{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: inline-block;
+}
+#div4 div:first-child{
+    background-color:red;
+}
+#div4 div:last-child{
+    background-color: red;
+}
+#div4 div:nth-child(7){
+    background-color: blue;
 }
