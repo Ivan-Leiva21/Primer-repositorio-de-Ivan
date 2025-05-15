@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 body{
     color: white;
     background-color: #a6FF;
@@ -48,4 +49,23 @@ body{
 }
 #texto3:hover{
     white-space: wrap;
+}
+#texto4{
+    color: #8b0d00;
+    font-family: "Underdog", system-ui;
+    font-weight: 600;
+    font-size: 32px;
+    border: 4px solid;
+    padding: 2px;
+    width: 600px;
+    text-align: center;
+}
+#texto5{
+    background-color: #0000d1;
+    column-count: 2;
+    column-gap: 16px;
+    column-rule: solid 3px #000000;
+}
+#texto5 h2{
+    column-span: all;
 }

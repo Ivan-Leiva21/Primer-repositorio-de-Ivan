@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+body{
+    color: #92ff00;
+    background-color: #102030;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+h2{
+    color: green;
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 22px;
+}
+#contenedor{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    min-height: 100vh;
+}
+#sombrat1{
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 1px 1px 15px #91ff00;
+}
+#sombrat2{
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 4px 2px 3px red, 5px 3px 10px blue;
+}
+.caja{
+    display: block;
+    width: 730px;
+    padding: 16px;
+    margin: 10px;
+    background-color: #a15105;
+}
+#sombracaja1{
+    box-shadow: 6px 6px 6px silver, 6px 6px 6px black;
+}
+#sombracaja2{
+    box-shadow: 3px 3px 3px red, 7px 7px 7px blue;
+}
+#sombracaja3{
+    box-shadow: 6px 6px 6px green, 5px 5px 5px pink;
+}
+#sombracaja4{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1), 0 6px 20px rgba(0, 0, 0, 1) inset;
+}
+#opacidad{
+    opacity: 0.3;
+}
+#redimensionar{
+    resize: both;
+    overflow: auto;
+}
