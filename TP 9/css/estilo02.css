@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #002f00da;
+    color: #ffffff
+}
+h1{
+    margin:50px;
+    padding:5px;
+    margin-left:180px;
+    font-size:46px;
+    background-color:#743535;
+    outline:1px solid black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:140px;
+}
+table{
+    margin:50px;
+    max-width:600px;
+    border-collapse: collapse;
+}
+table td, table th{
+    padding:8px;
+    border: 1px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+table th{
+    background-color:#743535;
+}
+table tbody tr:nth-child(even){
+    background-color:#743535;
+}
+table tbody tr:hover{
+    background-color: darkgray;
+    cursor:pointer;
+}
+table tbody tr{
+    transition:0.5s;
+}
