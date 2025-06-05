@@ -70,9 +70,70 @@ body{
     position: absolute;
     transition: 0.5s;
     bottom: 0;
+    left: 200px;
 }
-
 #espacio:hover img{
     bottom: 40em;
 }
-
+#publicidad{
+    background-color: #0099ac;
+    width: 450px;
+    height: 600px;
+    color: black;
+    font-size: 1.5em;
+    position: relative;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+#publicidad h1{
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    transition: 0.5s;
+    opacity: 0;
+    border-bottom: #000 3px solid;
+}
+#publicidad h2{
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+#publicidad a{
+    text-decoration: none;
+    background-color:#005;
+    color: white;
+    padding: 8px;
+    position: absolute;
+    top: 300px;
+    right: 160px;
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: 1s;
+}
+#publicidad img{
+    width: 400px;
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: 1s;
+}
+#publicidad:hover h1{
+    right: 130px;
+    opacity: 1;
+}
+#publicidad:hover h2{
+    left: 130px;
+    opacity: 1;
+}
+#publicidad:hover a{
+    top: 250px;
+    opacity: 1;
+}
+#publicidad:hover img{
+    opacity: 1;
+}
