@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #555;
+    color: #eee;
+}
+h1{
+    margin: 1em 2em;
+}
+h2{
+    margin: 1em 2em;
+}
+#caja1{
+    font-size: 2em;
+    padding: 1em;
+    background-color: rgb(16, 16, 80);
+}
+
+@media screen and (width < 800px){
+    #caja1{
+        display: none;
+    }
+}
+#caja2{
+    background-color: rgb(90, 21, 21);
+    font-size: 2em;
+    padding: 1em;
+}
+
+@media screen and (width > 600px){
+    #caja2{
+        display: none;
+    }
+}
+
+#cajas div{
+    background-color: #151;
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 7px;
+}
+
+@media screen and (width < 1000px){
+    .v1000{
+        display: none;
+    }
+}
