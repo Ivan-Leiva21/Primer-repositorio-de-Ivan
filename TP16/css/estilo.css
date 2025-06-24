@@ -14,6 +14,7 @@ a{
     max-width: 85%; 
     margin: auto;
     border: solid red 1px;
+    overflow: hidden;
 }
 #header{
     display: flex;
@@ -29,14 +30,14 @@ a{
     width: 45%;
     padding: 2px;
     display: flex;
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #header nav{
     display: flex;
     position: absolute;
     top: 2.5em;
-    left: 59%;
+    right: 0;
     gap: 1.5em;
 }
 #header nav a{
@@ -47,25 +48,27 @@ a{
     font-size: 1.3em;
     border: 4px solid #caa;
     text-align: center;
-    width: 40%;
-    max-width: 40%;
+    width: 500px;
+    
     height: 200px;
-    justify-content: center;
-    padding: 14px;
-    display: flex;
+    align-content: center;
+    padding: 1em;
     flex-direction: column;
     position: absolute; 
     top: 6em;
-    left: 28em;
+    right: 0;
 }
 #accion{
     display: flex;
+    gap: 5.2em;
+    padding: 2em 0;
 }
 #cajas{
-    border: 1px solid #caa;
-    gap: 5px;
+    border: 2px solid #caa;
+    width: 100px;
     justify-items: center;
     flex-direction: row;
+    padding: 30px;
 }
 #txt{
     display: flex;
@@ -75,4 +78,51 @@ a{
     letter-spacing: 1px;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main .imagen{
+    padding: 16px 0;
+    width: 100%;
+}
+#barras{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+#barras .barra1{
+    height: 3px;
+    border-radius: 5px;
+    background-color: #caa;
+    animation-name: barra1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    position: relative;
+    left: -1200px;
+}
+#barras .barra2{
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    animation-name: barra2;
+}
+#barras .barra3{
+    height: 3px;
+    border-radius: 5px;
+    background-color: #caa;
+}
+#barras .barra4{
+    height: 3px;
+    border-radius: 5px;
+    background-color: #caa;
+}
+#galeria img{
+    width: 200px;
+}
+@keyframes barra1{
+    from{
+        left: px;
+    }
+    to{
+        rigth: px;
+    }
 }
