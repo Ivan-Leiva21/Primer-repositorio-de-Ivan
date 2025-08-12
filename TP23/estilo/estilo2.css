@@ -10,4 +10,14 @@ body{
     width: 500px;
     height: 400px;
     background-color: orange;
+    position: relative;
+}
+
+#eventoMouse span{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 22px;
 }

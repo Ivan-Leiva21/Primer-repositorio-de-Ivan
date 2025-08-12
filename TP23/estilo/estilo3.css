@@ -1,0 +1,27 @@
+body{
+    background-color: #666;
+    color: white;
+}
+
+#divPadre{
+    display: flex;
+    gap: 3em;
+}
+
+#formulario{
+    background-color: black;
+    padding: 1em;
+}
+
+#formulario form{
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    width: 20em;
+}
+
+#respuestas{
+    background-color: black;
+    padding: 1em;
+    width: 20em;
+}

@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos en JS</title>
+    <title>Eventos en JS</title>
     <link rel="stylesheet" href="estilo/estilo2.css">
 </head>
 
 <body>
-    <h1>Elementos en JS</h1>
+    <h1>Eventos del DOM</h1>
     <button onclick="console.log('hola')">Saludar en Linea</button>
     <button id="botonSaludar">saludar con event listener</button>
 
     <h2>eventos del mouse</h2>
-    <div id="eventoMouse">mouse target</div>
+    <div id="eventoMouse">mouse target
+        <span></span>
+    </div>
 
     <h2>eventos del teclado</h2>
     <div id="eventosTeclado">
         <input type="text" id="eventosTecla1">
         <input type="text" id="eventosTecla2">
+    </div>
+
+    <h2>Eventos de foco</h2>
+    <div id="eventoFoco">
+        <input type="text" id="foco">
     </div>
 
     <script src="script/script2.js"></script>
