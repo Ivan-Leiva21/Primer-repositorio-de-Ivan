@@ -1,6 +1,7 @@
 body{
     background-color: #666;
     color: white;
+    transition: 0.20s;
 }
 
 #divPadre{
