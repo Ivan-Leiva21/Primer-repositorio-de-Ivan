@@ -1,0 +1,32 @@
+body {
+    margin: 1em;
+}
+
+#distribucion {
+    display: flex;
+    padding: 10px;
+    gap: 24px;
+    width: fit-content;
+    background-color: #911;
+}
+
+#distribucion div {
+    background-color: #559;
+    width: 120px;
+    height: 80px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.caja {
+    display: flex;
+    background-color: #666;
+    padding: 1em;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.5;
+    color: white;
+}
