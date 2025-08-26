@@ -29,4 +29,12 @@ button {
     width: fit-content;
     gap: 0.5;
     color: white;
+    transition: 1s;
+    
 }
+
+#caja1{
+    margin: 1em;
+
+}
+

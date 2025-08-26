@@ -10,22 +10,30 @@ document.querySelector("#btnHorizontal").addEventListener("click", (e) => {
 
 document.querySelector("#btnRojo").addEventListener("click", (e) => {
     console.log("boton Rojo clickeado");
-    document.querySelector("body").style.backgroundColor = "red";
+    document.querySelector("#caja1").style.backgroundColor = "red";
 });
 
 document.querySelector("#btnVerde").addEventListener("click", (e) => {
     console.log("boton verde clickeado");
-    document.querySelector("body").style.backgroundColor = "green";
+    document.querySelector("#caja1").style.backgroundColor = "green";
 });
 
+let fontsize = 1;
+
 document.querySelector("#btnGrande").addEventListener("click", (e) => {
+    // if(fontSize > 2){
+    //     (return);
+    // };
+        
+    fontsize += 0.1; 
     console.log("boton grande clickeado");
-    // document.querySelector("body").style.fontSize += "5px";
+    document.querySelector("#caja2 > span:first-child").style.fontSize = '$(fontsize)em';
 });
 
 document.querySelector("#btnPequeño").addEventListener("click", (e) => {
+    fontsize -= 0.1;
     console.log("boton pequeño clickeado");
-
+    document.querySelector("#caja2 > span:first-child").style.fontSize = $(fontsize)em';
 });
 
 document.querySelector("#btnOcultar").addEventListener("click", (e) => {
@@ -40,6 +48,8 @@ document.querySelector("#btnMostrar").addEventListener("click", (e) => {
 
 document.querySelector("#colorTexto").addEventListener("click", (e) => {
     console.log("change");
-    
+    console.log(e.target.value);
+    document.querySelector("#caja2")
 });
+
 

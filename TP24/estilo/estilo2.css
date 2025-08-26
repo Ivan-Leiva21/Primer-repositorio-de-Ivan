@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    background-color: #557;
+}
+
+.caja {
+    background-color: rgb(252, 214, 45);
+    padding: 1em;
+    display: flex;
+    width: fit-content;
+    margin: 2em;
+    flex-direction: column;
+    gap: 1em;
+    color: black;
+}
+
