@@ -16,10 +16,41 @@ body{
     background-color: rgb(252, 214, 45);
     padding: 1em;
     display: flex;
-    width: fit-content;
+    width: 80%;
     margin: 2em;
     flex-direction: column;
     gap: 1em;
     color: black;
 }
 
+.caja > span{
+    display: flex;
+}
+
+.caja > input{
+    height: 3em;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mensaje1{
+    background-color: white; 
+    border: solid 1px black;
+    width: 100%;
+    align-content: center;
+    padding: 5px;
+}
+#resultado{
+    margin-left: 7em;
+    background-color: white; 
+    border: solid 1px black;
+    width: 100%;
+    align-content: center;
+}
