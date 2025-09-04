@@ -20,7 +20,7 @@
 
     <div class="caja" id="ingredientes">
         <h1>Calculadora de ingredientes</h1>
-        <span id="">
+        <span id="cantidad">
             <span>receta por persona</span>
             <span>500 grms de papas</span>
             <span>100 ml de leche</span>
@@ -29,8 +29,8 @@
         </span>
         <input type="text">
         <span>
-            <button type="text" class="boton">Calcular</button>
-            <p id="resultado"></p>
+            <button type="text" class="boton" id="calcularIngredientes">Calcular</button>
+            <!-- <p id="resultado" id="mensaje2"></p> -->
         </span>
         
     </div>
@@ -47,6 +47,26 @@
 
     <div class="caja" id="carritoCompras">
         <h1>Carrito de compras</h1>
+        <div>Carrito: <span id="cantidadCarrito">0</span></div>
+        <div id="botonesCarrito">
+            <span>
+                <p>Remera Roja <br> 15000</p>
+                <button class="agregar" data-producto="remera roja" data-index="0">Agregar</button>
+            </span>
+            <span>
+                <p>Remera Verde <br> 20000</p>
+                <button class="agregar" data-producto="remera verde" data-index="1">Agregar</button>
+            </span>
+            <span>
+                <p>Remera Azul <br> 17000</p>
+                <button class="agregar" data-producto="remera azul" data-index="2">Agregar</button>
+            </span>
+        </div>
+        <span id="respuestaCarrito">
+            <button id="ver">Ver</button>
+            <button id="vaciar">Vaciar</button>
+            <p id="mensaje">...Respuesta</p>
+        </span>
     </div>
 
     <script src="script/script2.js"></script>
