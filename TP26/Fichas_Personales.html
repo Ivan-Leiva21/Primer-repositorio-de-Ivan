@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas de Datos</title>
+    <link rel="stylesheet" href="Estilo/fichas.css">
+</head>
+
+<body>
+    <h1>Fichas de Datos</h1>
+    <div id="formulario" class="caja">
+        <span id="padreInputs">
+            <span class="hijoInputs">
+                <input id="nombre" class="input" placeholder="nombre"></input>
+            </span>    
+            <span id="hijoInputs">
+                <input id="apellido" class="input" placeholder="apellido"></input>
+            </span>
+            <span id="hijoInputs">
+                <input id="telefono" class="input" placeholder="telefono"></input>
+            </span>
+        </span>
+        <span id="botonesFormulario">
+            <div class="btn" id="agregarForm">agregar</div>
+            <div class="btn" id="vaciarForm">Vaciar</div>
+        </span>
+    </div>
+    <div id="vista" class="caja">
+        <h2>Registros</h2>
+        <span id="botonesReg">
+            <div class="btnReg" id="mostrarReg">Mostrar</div>
+        </span>
+        <div id="salida" class="salida"></div>
+    </div>
+    
+    <script src="Script/fichas.js"></script>
+
+</body>
+
+</html>

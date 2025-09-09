@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2{
+    color: white;
+}
+body{
+    background-color: #567;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    padding: 2em;
+}
+.caja{
+    width: 40%;
+    height: 24em;
+    background-color: #abc;
+    display: flex;
+    flex-direction: column;
+    background-color: #46f;
+
+}
+#formulario{
+    width: 40%;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+}
+#padreInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    width: 100%;
+}
+.input{
+    display: flex;
+    background-color: white;
+    border: solid 2px black;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    
+}
+#botonesFormulario{
+    display: flex;
+    gap: 5em;
+    padding: 1.5em 10em;
+}
+.btn{
+    background-color: #16b;
+    width: 150%;
+    height: 150%;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+#botonesReg{
+    display: flex;
+    gap: 5em;
+    padding: 1.5em 10em;
+}
+.btnReg{
+    width: 100%;
+    height: 150%;
+    border: solid black 2px; 
+    background-color: #16b;
+    user-select: none;
+    color: white;
+    cursor: pointer;
+}
+.salida{
+    background-color: white;
+    border: solid 2px black;
+    height: 40px;
+}
