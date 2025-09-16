@@ -1,38 +1,59 @@
-// formulario //
-
-document.querySelector("#agregarForm").addEventListener("click", ()=>{
-    //console.log("boton agregar")
+document.querySelector("#registrar").addEventListener("click", () => {
     const nombre = document.querySelector("#nombre");
     const apellido = document.querySelector("#apellido");
     const telefono = document.querySelector("#telefono");
-    if(nombre.value === "" || apellido.value == "" || telefono.value == ""){
+    // console.log(nombre.value, apellido.value, telefono.value);
+    if (nombre.value === "" || apellido.value === "" || telefono.value === "") {
+       // console.log("completar todos los datos");
+       mostrarError("debe completar los 3 campos de input para registrar la ficha");
         return;
-    }
-    nombre.value == "";
-    apellido.value == "";
-    telefono.value == "";
-    document.querySelector("#vista").innerHTML = `Registros <span>${fichas.lenght}</span>`
-    
-});
-document.querySelector("#vaciarForm").addEventListener("click", ()=>{
-    //console.log("boton vaciar")
-});
-       
-// registro  //  
+    } else {
+        let datos = {
+            nombre: nombre.value,
+            apellido: apellido.value, 
+            telefono: telefono.value
+        }
+        // console.log("finaliza la funcion");
+        // console.log(datos);
+        
+        fichas.push(datos);
+        nombre.value = "";
+        apellido.value = "";
+        telefono.value = "";
+        console.log(fichas);
 
+        document.querySelector("#vista h2 span").innerHTML = `<span>${fichas.length}</span>`
 
-document.querySelector("#mostrarReg").addEventListener("click", ()=>{
-    //console.log("boton registro")
-    
+    };
 });
 
 let fichas = [];
 
-class Ficha{
-    costructor(nombre, apellido, telefono){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = telefono;
+function mostrarError(txt){
+    const divErrores = document.querySelector("#errores");
+    divErrores.textContent = txt;
+    divErrores.style.display = "flex";
+    setTimeout(() => {
+        divErrores.style.display = "none";
+    }, 1000 * 10);
+};
+
+document.querySelector("#vista #mostrarReg").addEventListener("click", () => {
+    // console.log("click a boton mostrar");
+    if(fichas.lengt === 0){
+        mostrarError("no hay registros para mostrar");
+        return;
     }
-}
-fichas.push(new Ficha(nombre.value, apellido.value, telefono.value));
+    fichas.forEach((objeto) => {
+        document.querySelector("#salida").innerHTML += `<div class="ficha">
+                <span>Nombre: ${objeto.nombre}</span>
+                <span>Apellido: ${objeto.apellido}</span>
+                <span>Telefono: ${objeto.telefono}</span>
+            </div>`
+    });
+});
+
+document.querySelector("#vista #vaciarReg").addEventListener("click", () => {
+    console.log("click a boton vaciar");
+});
+
