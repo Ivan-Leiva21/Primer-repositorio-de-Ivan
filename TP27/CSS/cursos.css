@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorPrimario: darkgreen;
+    --colorSecundario: green; 
+    --colorTerciario:  cyan;
+}
+body{
+    background-color: var(--colorPrimario);
+    color: var(--colorTerciario);
+    margin: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body h1, h2{
+    border-bottom: 4px solid white;
+    display: flex;
+    gap: 3em;
+}
+#cursos{
+    display: flex;
+    gap: 0.5em;
+    margin: 3em 0em;
+}
+.curso{
+    background-color: white;
+    color: purple;
+    width: 30%;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+    gap: 0.6em;
+}
+.btn{
+    display: flex;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: black;
+}
+#detalles{
+    background-color: white;
+    color: purple;
+    width: 90%; 
+    height: 28em;
+    margin: 3em 0em;
+    padding: 0.8em;
+}
+#detalles > h1 > h2{
+    border-bottom: 4px solid black;
+}
+#alumnos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.alumno{
+    margin: 0.9em 0em;
+    background-color: #aaa;
+    width: 25%;
+    display: flex;
+    flex-direction: column; 
+}

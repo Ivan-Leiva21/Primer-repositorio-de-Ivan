@@ -7,24 +7,24 @@ document.querySelector("#registrar").addEventListener("click", () => {
        // console.log("completar todos los datos");
        mostrarError("debe completar los 3 campos de input para registrar la ficha");
         return;
-    } else {
-        let datos = {
-            nombre: nombre.value,
-            apellido: apellido.value, 
-            telefono: telefono.value
-        }
-        // console.log("finaliza la funcion");
-        // console.log(datos);
+    }
+    let datos = {
+        nombre: nombre.value,
+        apellido: apellido.value, 
+        telefono: telefono.value
+    }
+    // console.log("finaliza la funcion"); 
+    //  console.log(datos);
         
-        fichas.push(datos);
-        nombre.value = "";
-        apellido.value = "";
-        telefono.value = "";
-        console.log(fichas);
+    fichas.push(datos);
+    nombre.value = "";
+    apellido.value = "";
+    telefono.value = "";
+    console.log(fichas);
 
-        document.querySelector("#vista h2 span").innerHTML = `<span>${fichas.length}</span>`
+    document.querySelector("#vista h2 span").innerHTML = `<span>${fichas.length}</span>`
 
-    };
+    
 });
 
 let fichas = [];
@@ -40,7 +40,8 @@ function mostrarError(txt){
 
 document.querySelector("#vista #mostrarReg").addEventListener("click", () => {
     // console.log("click a boton mostrar");
-    if(fichas.lengt === 0){
+    // document.querySelector("#vista").style.display = "flex";                 hacer que aparezca solo cuando se presiona mostrar 
+    if(fichas.length === 0){
         mostrarError("no hay registros para mostrar");
         return;
     }
@@ -54,6 +55,15 @@ document.querySelector("#vista #mostrarReg").addEventListener("click", () => {
 });
 
 document.querySelector("#vista #vaciarReg").addEventListener("click", () => {
-    console.log("click a boton vaciar");
+    // console.log("click a boton vaciar");
+    // vaciar los inputs
+    document.querySelector("#nombre").value = "";
+    document.querySelector("#apellido").value = "";
+    document.querySelector("#telefono").value = "";
+    // vaciar el array
+    fichas = {};
+    // resetear el contador
+    document.querySelector("#vista h2").innerHTML = `Registros`;
+    salida.textContent = "";
 });
 
