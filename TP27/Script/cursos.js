@@ -79,6 +79,6 @@ document.querySelectorAll("#cursos .btn").forEach((btn) => {
 
 function mostrarCurso(id){
     // console.log("funcion mostrar con id", id);
-    const cursoElegido = cursos.find(dato => dato.id == id);  
+    const cursoElegido = cursos.find(dato => dato.id == id);  // de esta forma se busca el id de cada curso y le asigna los datos de la id del array
     console.log(cursoElegido);
 }
