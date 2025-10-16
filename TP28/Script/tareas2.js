@@ -2,7 +2,7 @@ let tareas = [];
 
 document.querySelector("#btnAgregarTarea").addEventListener("click", () => {
     let tarea = document.querySelector("#tarea");
-    if (tarea.value === "") {return};
+    if (tarea.value === "") { return };
     let objTarea = {
         tarea: tarea.value,
         estado: "pendiente",
@@ -32,31 +32,36 @@ function buscarDatosPrevios() {
     crearVista();
 };
 
-function crearVista(){
+function crearVista() {
     tareas.forEach((tarea) => {
+        if (tarea.estado == "eliminada") return;
         document.querySelector("tbody").innerHTML += `<tr>
                     <td>${tarea.id}</td>
                     <td>${tarea.tarea}</td>
                     <td><div class="btn btnEstado" data-id=${tarea.id}>${tarea.estado}</div></td>
                     <td>
                         <div class="btn btnEditar">Editar</div>
-                        <div class="btn btnBorrar">Borrar</div>
+                        <div class="btn btnBorrar" data-id=${tarea.id}>Borrar</div>
                     </td>
                 </tr>`
     });
     document.querySelectorAll(".btnEstado").forEach((btn) => {
         btn.addEventListener("click", (e) => {
-            if(tareas[e.target.dataset.id].estado == "completa"){tareas[e.target.dataset.id].estado = "Pendiente"}else{tareas[e.target.dataset.id].estado = "completa"}
+            if (tareas[e.target.dataset.id].estado == "completa") { tareas[e.target.dataset.id].estado = "Pendiente" } else { tareas[e.target.dataset.id].estado = "completa" };
             console.log(tareas[e.target.dataset.id]);
             localStorage.setItem("tareas", JSON.stringify(tareas));
-            
-            crearVista();
         });
     });
-    
+    document.querySelectorAll(".btnBorrar").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            tareas[e.target.dataset.id].estado = "eliminada"
+            console.log(tareas[e.target.dataset.id]);
+            localStorage.setItem("tareas", JSON.stringify(tareas));
+
+        });
+
+    });
 };
 
 
-
 buscarDatosPrevios();
-
