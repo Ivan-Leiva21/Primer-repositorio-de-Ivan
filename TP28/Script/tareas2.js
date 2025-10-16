@@ -46,8 +46,11 @@ function crearVista(){
     });
     document.querySelectorAll(".btnEstado").forEach((btn) => {
         btn.addEventListener("click", (e) => {
-            tareas[e.target.dataset.id].estado = "completa"
+            if(tareas[e.target.dataset.id].estado == "completa"){tareas[e.target.dataset.id].estado = "Pendiente"}else{tareas[e.target.dataset.id].estado = "completa"}
             console.log(tareas[e.target.dataset.id]);
+            localStorage.setItem("tareas", JSON.stringify(tareas));
+            
+            crearVista();
         });
     });
     
