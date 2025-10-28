@@ -1,0 +1,23 @@
+body {
+    background-color: darkslateblue;
+    color: lightgray;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+table{
+    width: 40em;
+    gap: 0.5em;
+    flex-direction: column;
+    border: 4px solid;
+}
+thead{
+    font-size: 1.5em;
+}
+tbody{
+    font-size: 1.2em;
+}
