@@ -5,33 +5,38 @@
 }
 
 body {
-    background-color: darkslateblue; 
-    color: lightyellow;
+    background-color: lightblue; 
+    color: rgb(38, 83, 83);
 }
 
 h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3em;
+    border-bottom: 3px solid;
     margin: 0.5em;
 }
 
 h2{
-    background-color: black;
     width: fit-content;
     padding: 0.3em;
-    margin: 0.5em 10em;
+    margin: 1.5em;
     font-size: 2em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .res{
-    width: 900px;
-    height: 50px;
-    padding: 0 1em;
-    background-color: black;
-    margin: 0.5em 0em;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    gap: 0.8em;
+    background-color: #04549a;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    margin: 1.5em;
     font-size: 1.5em;
+    flex-direction: column;
     align-items: center;
+    color: white;
     display: flex;
 }
 
@@ -39,9 +44,17 @@ h2{
     display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: fit-content;
-    font-size: 2em;
-    background-color: black;
+    font-size: 1.5em;
+    color: white;
+    background-color: #090091;
     padding: 0.2em;
-    margin: 0.5em 10em;
+    border-radius: 10px;
+    margin: 0.5em 1.5em;
+}
+
+#inputNombre{
+    margin: 2em 0;
+    display: flex;
 }
