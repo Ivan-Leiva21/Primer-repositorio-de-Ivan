@@ -1,0 +1,12 @@
+Datos:
+    no se puede usar dos librerias en el mismo servidor.
+    app es el estandar para asignar como variable de una libreria.
+    urlencoded decodifica el cuerpo de los .post.
+    el controlador procesa datos que recibe el servidor.
+    middleware es una funcion que procesa .
+    protocolo commonjs.
+
+buscar:
+    servicios.
+    utilidades.
+    vistas.
