@@ -9,8 +9,6 @@ const validarFormDatos = (req, res, next) => {
     }
 };
 
-
-
 module.exports = {
     validarFormDatos,
 };

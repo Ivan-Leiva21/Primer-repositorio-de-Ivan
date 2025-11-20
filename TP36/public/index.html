@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Home de mi sitio</h1>
+        <div id="barraNav">
+            <div class="btn" id="btnHome">Home</div>
+            <div class="btn" id="btnContacto">Contacto</div>
+            <div class="btn" id="btnLogin">Login</div>
+        </div>
+    </header>
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form action="/contacto" method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+            <input type="submit" value="Enviar">
+        </form>
+        <h2>Formulario de Login</h2>
+        <form action="/login">
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+            <input type="text" name="contraseña" id="contraseña" placeholder="Contraseña">
+            <input type="submit" value="Ingresar">
+        </form>
+        <img src="" alt="">
+        <img src="" alt="">
+    </main>
+    <footer>
+        hecho por Ivan Leiva &copy;2025
+    </footer>
+    
+</body>
+</html>

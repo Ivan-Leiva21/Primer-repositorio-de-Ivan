@@ -11,13 +11,14 @@ const PORT = 4000;
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-    res.send("<h1>Bienvenido a mi Web</h1><a href='/form'>Formulario</a><a href='/form/v2'>Formulario V2</a>");
+    res.send("<h1>Bienvenido a mi Web</h1><a href='/form'>Formulario</a><a href='/form/v2'>Formulario V2</a><a href='/form/V3'>Formulario V3</a>");
 });
 
 app.get("/form", (req, res) => {
     res.send(`<form action="/form/datos" method="post">
     <input type="text" name="nombre" id="" placeholder="Nombre">
-    <input type="text" name="Apellido" id="" placeholder="Apellido">
+    <input type="text" name="apellido" id="" placeholder="Apellido">
+
     <input type="submit" value="Enviar">
 </form>`);
 });
@@ -39,13 +40,26 @@ app.post("/form/datos", (req, res) => {
 app.get("/form/v2", (req, res) => {
     res.send(`<form action="/form/v2" method="post">
     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-    <input type="text" name="Apellido" id="apellido" placeholder="Apellido">
+    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
     <input type="text" name="dni" id="dni" placeholder="DNI sin puntos">
     <input type="submit" value="Enviar">
 </form>`);
 });
 
 app.post("/form/v2", middlewareValidacion.validarFormDatos, controllersFormularios.formularioDatosV2);
+
+//=================== Form v3 =======================
+
+app.get(app.get("/form/v3", (req, res) => {
+    res.send(`<form action="/form/v3" method="post">
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+    <input type="text" name="dni" id="dni" placeholder="DNI sin puntos">
+    <input type="submit" value="Enviar">
+</form>`);
+}))
+
+app.post("/form/v3", middlewareValidacion.validarFormDatos, controllersFormularios.formularioDatosV3);
 
 app.use((req, res, next) => {
     res.status(404).send(`<h2>Pagina inexistente! :c</h2>`);
