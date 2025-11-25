@@ -2,7 +2,9 @@ import express from "express";
 const app = express();
 const PORT = 4000;
 
-import rutas from "./src/routes/site.routes.js";
+import {rutas} from "./src/routes/site.routes.js";
+
+
 
 app.use(express.static("public"));
 

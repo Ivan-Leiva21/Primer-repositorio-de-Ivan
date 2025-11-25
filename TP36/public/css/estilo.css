@@ -11,8 +11,9 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #006;
-    color: #aaa;
+    background-color: #098;
+    color: #ddc;
+    font-family: 'Arial Narrow';
     margin: 0;
     padding: 0.5em;
     width: 100%;
@@ -22,13 +23,13 @@ header #barraNav{
     width: 100%;
     padding: 0.6em 2em;
     background-color: #265;
-
 }
 header .btn{
     font-size: 1.4em;
     display: flex;
     flex-direction: column;
     padding: 0.5em;
+    font-family: 'Lucida Sans Regular';
     gap: 2em;
     justify-content: center;
     cursor: pointer;
@@ -36,11 +37,14 @@ header .btn{
     height: 0.5em; 
     margin: 0;
 }
-main h2{
-    color: #ddd;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer{
-    position: static;
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     bottom: 0;
     background-color: #265;
     display: flex;
@@ -53,13 +57,20 @@ footer{
 }
 form{
     display: flex;
+    margin-top: 3em;
     flex-direction: column;
-    gap: 1em;
-    background-color: #123;
-    width: 300px;
-    padding: 1em;
     gap: 2em;
-
+    background-color: #123;
+    width: 400px;
+    padding: 1em;
+    align-items: center;
+    color: #ddc;
+}
+form h2{
+    font-size: 2em;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 0;
 }
 form input{
     width: 17em;
