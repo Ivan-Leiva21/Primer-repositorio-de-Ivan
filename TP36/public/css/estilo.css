@@ -76,3 +76,17 @@ form input{
     width: 17em;
     height: 2.2em;
 }
+.pop{
+    background-color: #b23;
+    color: whitesmoke;
+    padding: 2em 0em;
+    font-size: 1.2em;
+    font-family: Arial;
+    display: flex;
+    margin: 0.2em 0.2em;
+    position: absolute;
+    justify-content: center;
+    width: 20%;
+    cursor: pointer;
+    height: 20%;
+}
