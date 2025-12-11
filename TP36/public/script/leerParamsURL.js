@@ -13,6 +13,12 @@ if(params.has("error")){
     timeOutPop();
 }
 
+if(params.has("msg")){
+    document.querySelector("#msg").innerHTML += params.get("msg");
+    document.querySelector("#msg").style.display = "block";
+    timeOutPop();
+}
+
 document.querySelectorAll(".pop").forEach(pop => {
     pop.addEventListener("click", (e)=>{
         e.target.style.display = "none"; 

@@ -1,10 +1,12 @@
 import express from "express";
 const rutas = express.Router();
-import { formularioContacto } from "../controllers/formularios.controlers.js";
-import { validarFormulario } from "../middlewares/validador.middleware.js";
+import { formularioContacto, postLogin, leerContactos} from "../controllers/formularios.controlers.js";
+import { validarFormulario, validarLogin} from "../middlewares/validador.middleware.js";
 
 rutas.post("/contacto", validarFormulario, formularioContacto);
 
-//rutas.post("/login");
+rutas.get("/contactos/leer", leerContactos)
+
+rutas.post("/login", validarLogin, postLogin);
 
 export { rutas };
