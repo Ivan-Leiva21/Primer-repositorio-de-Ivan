@@ -5,6 +5,8 @@
 }
 body{
     background-color: #092;
+    justify-content: center;
+    align-items: center;
 }
 header{
     display: flex;
@@ -18,7 +20,7 @@ header{
 header h1{
     font-size: 40px;
     font-family: "Times New Roman";
-    color: white;
+    color: #cec;
 }
 nav{
     display: flex;
@@ -43,15 +45,27 @@ nav div{
 main{
     display: flex;
     flex-direction: column;
-    margin: 5em 10em;
-    width: 600px;
-    gap: 1.5em;
+    justify-content: center;
 }
-main div{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+main #contenedorMain{
+    margin: 5em 24em;
+    display: flex;
+    flex-direction: column;
+    background-color: #151;
+    border-radius: 5%;
+    gap: 1em;
+    padding: 1.2em;
 }
-main h2{
-    font-family: "Cambria";
+main #contenedorMain div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+}
+main #contenedorMain h2{
+    font-family:  Helvetica;
+    color: #cec;
+    border-bottom: solid 1px;
 }
 footer{
     display: flex;
@@ -62,22 +76,27 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 50px;
+    height: 40px;
 }
 form{
     display: flex;
     width: max-content;
     gap: 1.5em;
     width: 400px;
+    padding: 1em 0;
     color: white;
     flex-direction: column;
+    border-radius: 5%;
+    background-color: #151;
     justify-content: center;
     align-items: center;
-    background-color: #151;
-    margin: -1px 50%;
 }
 form span{
     font-size: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: #131;
+    width: 100%;
     border-bottom: 1px solid;
 }
 .pop{
@@ -86,4 +105,7 @@ form span{
     width: 200px;
     height: 70px;
     margin: 1em 0.5em;
+}
+a{
+    text-decoration: none;
 }

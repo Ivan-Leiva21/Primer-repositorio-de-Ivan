@@ -12,21 +12,24 @@
         <h1>Home de mi sitio</h1>
     </header>
     <nav>
-        <div id="btnHome">Home</div>
-        <div id="btnPre">preinscripcion</div>
+        <a href="index.html"><div id="btnHome">Home</div></a>
+        <a href="preinscripcion.html"><div id="btnPre">preinscripcion</div></a>
     </nav>
     <main>
-        <form action="/preinscripcion">
+        <form action="/preinscripcion.html">
         <span>Curso</span>
         <select name="curso" id="selectCurso">
-            <option value="">Programacion Web</option>
-            <option value="">Reparacion de PC</option>
+            <option value="">Elija un Curso</option>
+            <option value="Programacion">Programacion Web</option>
+            <option value="Reparacion">Reparacion de PC</option>
         </select>
         <span>Sede</span>
         <select name="sede" id="selectSede">
-            <option value="">San Miguel</option>
-            <option value="">San Martin</option>
+            <option value="">Elija una Sede</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="San Martin">San Martin</option>
         </select>
+        <span>Registro</span>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre"> 
         <input type="text" name="dni" id="dni" placeholder="DNI"> 
         <input type="text" name="telefono" id="telefono" placeholder="Telefono"> 
